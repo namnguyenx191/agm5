@@ -1,0 +1,21 @@
+
+package NguyenNam_29219034776;
+import java.util.Scanner;
+
+public class kimtuthapso {
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        
+        System.out.print("Nhap so hang cua kim tu thap: ");
+        int sohang = nhap.nextInt();
+        
+        for (int i = 1; i <= sohang; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+        
+        nhap.close();
+    }
+}
