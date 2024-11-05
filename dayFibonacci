@@ -1,0 +1,25 @@
+
+package NguyenNam_29219034776;
+import java.util.Scanner;
+
+public class dayFibonacci {
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        
+        System.out.print("Nhap so luong phan tu cua day Fibonacci: ");
+        int soluong = nhap.nextInt();
+        
+        int sothunhat = 0, sothuhai = 1;
+        
+        System.out.print("Day Fibonacci: ");
+        
+        for (int i = 0; i < soluong; i++) {
+            System.out.print(sothunhat + " ");
+            int sotieptheo = sothunhat + sothuhai;
+            sothunhat = sothuhai;
+            sothuhai = sotieptheo;
+        }
+        
+        nhap.close();
+    }
+}
