@@ -1,0 +1,31 @@
+
+package NguyenNam_29219034776;
+import java.util.Scanner;
+import java.util.Random;
+
+public class trochoidoanso {
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        Random ngaunhien = new Random();
+        
+        int socandoan = ngaunhien.nextInt(50) + 1; 
+        int sodoan = 0;
+        
+        System.out.println("Hay doan so tu 1 den 50:");
+        
+        while (sodoan != socandoan) {
+            System.out.print("Nhap so cua ban: ");
+            sodoan = nhap.nextInt();
+            
+            if (sodoan < socandoan) {
+                System.out.println("So cua ban lon hon");
+            } else if (sodoan > socandoan) {
+                System.out.println("So cua ban nho hon");
+            } else {
+                System.out.println("Chuc mung! Ban da doan dung");
+            }
+        }
+        
+        nhap.close();
+    }
+}
